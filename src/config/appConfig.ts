@@ -3,20 +3,20 @@ import Logo from '../assets/logo.svg'
 
 export const APP_CONFIG = {
   madrassaSheet: {
-    sheetId: "1EyQw67ZHjxl0gTKdFCtWKXlIsewUmAoPoxO54D5nOJg",  // Example public sheet for testing
+    sheetId: "1V1YePmEbinG21TvCYIypzLSo3H1ykjqQNomFu-yU-xQ",  // Example public sheet for testing
     sheetName: "Class Data",
     displayEnabled: true,
     selectedClass: 'Class 1' as const, // Used to determine which column mapping to use from detailedColumns
     availableClasses: [
       'Class 1',
       'Class 2',
-      'Class 3',
-      'Class 4',
+      // 'Class 3',
+      // 'Class 4',
       // 'Class 5',
-      'Class 6',
-      'Class 8',
-      'Class 9',
-      'Class 11'
+      // 'Class 6',
+      // 'Class 8',
+      // 'Class 9',
+      // 'Class 11'
     ], // Explicit dropdown list
     simpleResult: {
       enabled: false,
@@ -41,8 +41,8 @@ export const APP_CONFIG = {
     fullPortalName: "Resulta"
   },
   institution: {
-    nameEnglish: 'KUVVATHUL ISLAM MADRASA KOTEBAGILU',
-    nameArabic: 'مدرسة قوة الإسلام',
+    nameEnglish: 'Demo Madrassa',
+    nameArabic: 'مدرسة ديمو',
   },
   examination: {
     name: "Annual Examination",
