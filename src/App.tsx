@@ -145,18 +145,6 @@ function App() {
     exportRef.current.style.display = 'none'; // Re-hide
   }
 
-  const handleDownloadPNG = async () => {
-    if (!exportRef.current) return;
-    
-    exportRef.current.style.display = 'block';
-    // Capture the entire ref wrapping all pages natively
-    const canvas = await html2canvas(exportRef.current, { scale: 2, useCORS: true, logging: false });
-    const link = document.createElement('a');
-    link.download = `${institutionName}-${selectedClass}-resulta.png`;
-    link.href = canvas.toDataURL('image/png');
-    link.click();
-    exportRef.current.style.display = 'none';
-  }
 
   if (loading) return <Loading />
 
